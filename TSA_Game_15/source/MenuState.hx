@@ -6,6 +6,9 @@ import flixel.FlxState;
 import flixel.text.FlxText;
 import flixel.ui.FlxButton;
 import flixel.util.FlxMath;
+using flixel.util.FlxSpriteUtil;
+import flixel.util.FlxDestroyUtil;
+
 
 /**
  * A FlxState which can be used for the game's menu.
@@ -17,6 +20,10 @@ class MenuState extends FlxState
 	 */
 	override public function create():Void
 	{
+		var _btnPlay:FlxButton;
+		_btnPlay = new FlxButton(0, 0, "Play", clickPlay);
+		_btnPlay.screenCenter();
+		add(_btnPlay);
 		super.create();
 	}
 	
@@ -35,5 +42,11 @@ class MenuState extends FlxState
 	override public function update():Void
 	{
 		super.update();
-	}	
+	}
+	
+	
+	private function clickPlay()
+	{
+		FlxG.switchState(new PlayState());
+	}
 }

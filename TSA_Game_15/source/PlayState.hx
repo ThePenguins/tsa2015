@@ -6,6 +6,8 @@ import flixel.FlxState;
 import flixel.text.FlxText;
 import flixel.ui.FlxButton;
 import flixel.util.FlxMath;
+using flixel.util.FlxSpriteUtil;
+import flixel.util.FlxDestroyUtil;
 
 /**
  * A FlxState which can be used for the actual gameplay.
@@ -17,6 +19,10 @@ class PlayState extends FlxState
 	 */
 	override public function create():Void
 	{
+		var welcomeText:FlxText;
+		welcomeText = new FlxText(0, 0, 0, "welcome to the game");
+		welcomeText.screenCenter();
+		add(welcomeText);
 		super.create();
 	}
 	
