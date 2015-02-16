@@ -2532,6 +2532,26 @@
    <depend name="include/flixel/animation/FlxBaseAnimation.h"/>
    <depend name="include/flixel/interfaces/IFlxDestroyable.h"/>
   </file>
+  <file name="src/flixel/addons/effects/GlitchDirection.cpp">
+   <depend name="include/flixel/addons/effects/GlitchDirection.h"/>
+  </file>
+  <file name="src/flixel/addons/effects/FlxGlitchSprite.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/flixel/FlxBasic.h"/>
+   <depend name="include/flixel/FlxG.h"/>
+   <depend name="include/flixel/FlxObject.h"/>
+   <depend name="include/flixel/FlxSprite.h"/>
+   <depend name="include/flixel/addons/effects/FlxGlitchSprite.h"/>
+   <depend name="include/flixel/addons/effects/GlitchDirection.h"/>
+   <depend name="include/flixel/interfaces/IFlxDestroyable.h"/>
+   <depend name="include/flixel/system/layer/TileSheetData.h"/>
+   <depend name="include/flixel/util/FlxRandom.h"/>
+   <depend name="include/flixel/util/loaders/CachedGraphics.h"/>
+   <depend name="include/openfl/_v2/display/BitmapData.h"/>
+   <depend name="include/openfl/_v2/display/IBitmapDrawable.h"/>
+   <depend name="include/openfl/_v2/geom/Point.h"/>
+   <depend name="include/openfl/_v2/geom/Rectangle.h"/>
+  </file>
   <file name="src/flixel/FlxSubState.cpp">
    <depend name="include/flixel/FlxBasic.h"/>
    <depend name="include/flixel/FlxObject.h"/>
@@ -3145,8 +3165,21 @@
    <depend name="include/flixel/text/FlxText.h"/>
    <depend name="include/flixel/util/FlxSpriteUtil.h"/>
   </file>
+  <file name="src/OptnState.cpp">
+   <depend name="include/OptnState.h"/>
+   <depend name="include/flixel/FlxBasic.h"/>
+   <depend name="include/flixel/FlxObject.h"/>
+   <depend name="include/flixel/FlxSprite.h"/>
+   <depend name="include/flixel/FlxState.h"/>
+   <depend name="include/flixel/group/FlxGroup.h"/>
+   <depend name="include/flixel/group/FlxTypedGroup.h"/>
+   <depend name="include/flixel/interfaces/IFlxDestroyable.h"/>
+   <depend name="include/flixel/text/FlxText.h"/>
+   <depend name="include/flixel/util/FlxSpriteUtil.h"/>
+  </file>
   <file name="src/MenuState.cpp">
    <depend name="include/MenuState.h"/>
+   <depend name="include/OptnState.h"/>
    <depend name="include/PlayState.h"/>
    <depend name="include/flixel/FlxBasic.h"/>
    <depend name="include/flixel/FlxG.h"/>

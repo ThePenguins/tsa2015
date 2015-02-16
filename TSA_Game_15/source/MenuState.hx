@@ -1,5 +1,6 @@
 package;
 
+import flixel.addons.effects.FlxGlitchSprite;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
@@ -8,6 +9,7 @@ import flixel.ui.FlxButton;
 import flixel.util.FlxMath;
 using flixel.util.FlxSpriteUtil;
 import flixel.util.FlxDestroyUtil;
+import flixel.addons.*;
 
 
 /**
@@ -20,10 +22,15 @@ class MenuState extends FlxState
 	 */
 	override public function create():Void
 	{
-		var _btnPlay:FlxButton;
-		_btnPlay = new FlxButton(0, 0, "Play", clickPlay);
-		_btnPlay.screenCenter();
-		add(_btnPlay);
+		var btnPlay:FlxButton;
+		var btnOptn:FlxButton;
+		btnPlay = new FlxButton(0, 0, clickPlay);
+		btnOptn = new FlxButton((FlxG.width/2)-100, (FlxG.height/2), clickOptn);
+		btnPlay.loadGraphic("assets/images/play button.png", true, 100, 100);
+		btnOptn.loadGraphic("assets/images/options button.png", true, 200, 100);
+		btnPlay.screenCenter();
+		add(btnPlay);
+		add(btnOptn);
 		super.create();
 	}
 	
@@ -48,5 +55,10 @@ class MenuState extends FlxState
 	private function clickPlay()
 	{
 		FlxG.switchState(new PlayState());
+	}
+	
+	private function clickOptn()
+	{
+		FlxG.switchState(new OptnState());
 	}
 }

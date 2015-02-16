@@ -275,6 +275,8 @@
 #include <flixel/animation/FlxAnimationController.h>
 #include <flixel/animation/FlxAnimation.h>
 #include <flixel/animation/FlxBaseAnimation.h>
+#include <flixel/addons/effects/GlitchDirection.h>
+#include <flixel/addons/effects/FlxGlitchSprite.h>
 #include <flixel/FlxSubState.h>
 #include <flixel/FlxSprite.h>
 #include <flixel/_FlxSprite/GraphicDefault.h>
@@ -325,6 +327,7 @@
 #include <StringBuf.h>
 #include <Reflect.h>
 #include <PlayState.h>
+#include <OptnState.h>
 #include <MenuState.h>
 #include <flixel/FlxState.h>
 #include <flixel/group/FlxGroup.h>
@@ -640,6 +643,8 @@ hx::RegisterResources( hx::GetResources() );
 ::flixel::animation::FlxAnimationController_obj::__register();
 ::flixel::animation::FlxAnimation_obj::__register();
 ::flixel::animation::FlxBaseAnimation_obj::__register();
+::flixel::addons::effects::GlitchDirection_obj::__register();
+::flixel::addons::effects::FlxGlitchSprite_obj::__register();
 ::flixel::FlxSubState_obj::__register();
 ::flixel::FlxSprite_obj::__register();
 ::flixel::_FlxSprite::GraphicDefault_obj::__register();
@@ -690,6 +695,7 @@ hx::RegisterResources( hx::GetResources() );
 ::StringBuf_obj::__register();
 ::Reflect_obj::__register();
 ::PlayState_obj::__register();
+::OptnState_obj::__register();
 ::MenuState_obj::__register();
 ::flixel::FlxState_obj::__register();
 ::flixel::group::FlxGroup_obj::__register();
@@ -764,6 +770,7 @@ hx::RegisterResources( hx::GetResources() );
 ::flixel::group::FlxGroup_obj::__boot();
 ::flixel::FlxState_obj::__boot();
 ::MenuState_obj::__boot();
+::OptnState_obj::__boot();
 ::PlayState_obj::__boot();
 ::Reflect_obj::__boot();
 ::StringBuf_obj::__boot();
@@ -809,6 +816,8 @@ hx::RegisterResources( hx::GetResources() );
 ::flixel::_FlxSprite::GraphicDefault_obj::__boot();
 ::flixel::FlxSprite_obj::__boot();
 ::flixel::FlxSubState_obj::__boot();
+::flixel::addons::effects::FlxGlitchSprite_obj::__boot();
+::flixel::addons::effects::GlitchDirection_obj::__boot();
 ::flixel::animation::FlxBaseAnimation_obj::__boot();
 ::flixel::animation::FlxAnimation_obj::__boot();
 ::flixel::animation::FlxAnimationController_obj::__boot();
