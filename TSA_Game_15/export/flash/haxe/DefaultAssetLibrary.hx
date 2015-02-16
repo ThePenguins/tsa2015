@@ -48,6 +48,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
 		className.set ("assets/images/images-go-here.txt", __ASSET__assets_images_images_go_here_txt);
 		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
+		className.set ("assets/images/options button.png", __ASSET__assets_images_options_button_png);
+		type.set ("assets/images/options button.png", AssetType.IMAGE);
+		className.set ("assets/images/play button.png", __ASSET__assets_images_play_button_png);
+		type.set ("assets/images/play button.png", AssetType.IMAGE);
 		className.set ("assets/images/tree1.png", __ASSET__assets_images_tree1_png);
 		type.set ("assets/images/tree1.png", AssetType.IMAGE);
 		className.set ("assets/images/tree2.png", __ASSET__assets_images_tree2_png);
@@ -73,6 +77,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.TEXT);
+		id = "assets/images/options button.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/play button.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/tree1.png";
 		path.set (id, id);
 		
@@ -112,6 +124,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
 		#end
 		
 		#if (windows || mac || linux)
@@ -123,6 +137,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/images/images-go-here.txt", __ASSET__assets_images_images_go_here_txt);
 		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
+		
+		className.set ("assets/images/options button.png", __ASSET__assets_images_options_button_png);
+		type.set ("assets/images/options button.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/play button.png", __ASSET__assets_images_play_button_png);
+		type.set ("assets/images/play button.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/tree1.png", __ASSET__assets_images_tree1_png);
 		type.set ("assets/images/tree1.png", AssetType.IMAGE);
@@ -714,6 +734,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 @:keep @:bind #if display private #end class __ASSET__assets_data_data_goes_here_txt extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_images_go_here_txt extends flash.utils.ByteArray { }
+@:keep @:bind #if display private #end class __ASSET__assets_images_options_button_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_play_button_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_tree1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_tree2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_music_music_goes_here_txt extends flash.utils.ByteArray { }
@@ -725,6 +747,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 #elseif html5
 
 #if openfl
+
+
 
 
 
@@ -747,6 +771,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 @:file("assets/data/data-goes-here.txt") class __ASSET__assets_data_data_goes_here_txt extends lime.utils.ByteArray {}
 @:file("assets/images/images-go-here.txt") class __ASSET__assets_images_images_go_here_txt extends lime.utils.ByteArray {}
+@:bitmap("assets/images/options button.png") class __ASSET__assets_images_options_button_png extends lime.graphics.Image {}
+@:bitmap("assets/images/play button.png") class __ASSET__assets_images_play_button_png extends lime.graphics.Image {}
 @:bitmap("assets/images/tree1.png") class __ASSET__assets_images_tree1_png extends lime.graphics.Image {}
 @:bitmap("assets/images/tree2.png") class __ASSET__assets_images_tree2_png extends lime.graphics.Image {}
 @:file("assets/music/music-goes-here.txt") class __ASSET__assets_music_music_goes_here_txt extends lime.utils.ByteArray {}

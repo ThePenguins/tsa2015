@@ -273,6 +273,8 @@ obj/mscv18-ncxp/c125f970_FlxPrerotatedAnimation.obj
 obj/mscv18-ncxp/c125f970_FlxAnimationController.obj
 obj/mscv18-ncxp/c125f970_FlxAnimation.obj
 obj/mscv18-ncxp/c125f970_FlxBaseAnimation.obj
+obj/mscv18-ncxp/7bac47a6_GlitchDirection.obj
+obj/mscv18-ncxp/7bac47a6_FlxGlitchSprite.obj
 obj/mscv18-ncxp/0ed47a05_FlxSubState.obj
 obj/mscv18-ncxp/0ed47a05_FlxSprite.obj
 obj/mscv18-ncxp/8f11d15c_GraphicDefault.obj
@@ -323,6 +325,7 @@ obj/mscv18-ncxp/57588eaa_StringTools.obj
 obj/mscv18-ncxp/57588eaa_StringBuf.obj
 obj/mscv18-ncxp/57588eaa_Reflect.obj
 obj/mscv18-ncxp/57588eaa_PlayState.obj
+obj/mscv18-ncxp/57588eaa_OptnState.obj
 obj/mscv18-ncxp/57588eaa_MenuState.obj
 obj/mscv18-ncxp/0ed47a05_FlxState.obj
 obj/mscv18-ncxp/a12cfa6b_FlxGroup.obj

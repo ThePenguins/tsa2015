@@ -64,7 +64,7 @@ Void PlayState_obj::create( ){
 		HX_STACK_LINE(22)
 		::flixel::text::FlxText welcomeText;		HX_STACK_VAR(welcomeText,"welcomeText");
 		HX_STACK_LINE(23)
-		::flixel::text::FlxText _g = ::flixel::text::FlxText_obj::__new((int)0,(int)0,(int)0,HX_CSTRING("welcome to the game"),null(),null());		HX_STACK_VAR(_g,"_g");
+		::flixel::text::FlxText _g = ::flixel::text::FlxText_obj::__new((int)0,(int)0,(int)0,HX_CSTRING("welcome, Jake and Patrick, to the game"),null(),null());		HX_STACK_VAR(_g,"_g");
 		HX_STACK_LINE(23)
 		welcomeText = _g;
 		HX_STACK_LINE(24)
