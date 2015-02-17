@@ -18,7 +18,6 @@
 -D openfl-flash
 -D FLX_RENDER_BLIT
 -D lime-curl
--D fdb
 -D web
 -swf-lib C:\Users\Abhin_000\Documents\GitHub\tsa2015\TSA_Game_15\export/flash/obj/assets.swf
 -swf-version 11.8
