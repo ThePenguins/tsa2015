@@ -18,7 +18,6 @@
 -D openfl-flash
 -D FLX_RENDER_BLIT
 -D lime-curl
--D fdb
 -D web
 -swf-lib export/flash/obj/assets.swf
 -swf-version 11.8
