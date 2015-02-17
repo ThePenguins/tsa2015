@@ -20,7 +20,7 @@ class PlayState extends FlxState
 	override public function create():Void
 	{
 		var welcomeText:FlxText;
-		welcomeText = new FlxText(0, 0, 0, "welcome, Jake and Patrick, to the game");
+		welcomeText = new FlxText(0, 0, 0, "welcome, Abhi, to the game");
 		welcomeText.screenCenter();
 		add(welcomeText);
 		super.create();
