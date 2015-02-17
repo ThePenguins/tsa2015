@@ -1,3 +1,3 @@
 @ECHO OFF 
-CD C:\Users\Adu\Documents\HaxeProjects\TSA_Game_15 
+CD %0 
 START lime test %1 
