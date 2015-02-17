@@ -25,9 +25,9 @@ class MenuState extends FlxState
 		var btnPlay:FlxButton;
 		var btnOptn:FlxButton;
 		btnPlay = new FlxButton(0, 0, clickPlay);
-		btnOptn = new FlxButton((FlxG.width/2)-100, (FlxG.height/2), clickOptn);
-		btnPlay.loadGraphic("assets/images/play button.png", true, 100, 100);
-		btnOptn.loadGraphic("assets/images/options button.png", true, 200, 100);
+		btnOptn = new FlxButton((FlxG.width/2)-75, (FlxG.height/2)+22, clickOptn);
+		btnPlay.loadGraphic("assets/images/play button.png", true, 93, 45);
+		btnOptn.loadGraphic("assets/images/options button.png", true, 154, 45);
 		btnPlay.screenCenter();
 		add(btnPlay);
 		add(btnOptn);
