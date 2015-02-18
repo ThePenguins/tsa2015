@@ -111,13 +111,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set (id, AssetType.MUSIC);
 		
 		
-		var assetsPrefix = ApplicationMain.config.assetsPrefix;
-		if (assetsPrefix != null) {
-			for (k in path.keys()) {
-				path.set(k, assetsPrefix + path[k]);
-			}
-		}
-		
 		#else
 		
 		#if openfl
