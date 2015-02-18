@@ -13,7 +13,8 @@ import flixel.util.FlxDestroyUtil;
  * A FlxState which can be used for the actual gameplay.
  */
 class PlayState extends FlxState
-{
+{	
+	public var player:Player;
 	/**
 	 * Function that is called up when to state is created to set it up. 
 	 */
@@ -23,6 +24,8 @@ class PlayState extends FlxState
 		welcomeText = new FlxText(0, 0, 0, "welcome, Abhi, to the game");
 		welcomeText.screenCenter();
 		add(welcomeText);
+		player = new Player();
+		add(player);
 		super.create();
 	}
 	
