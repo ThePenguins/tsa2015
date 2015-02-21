@@ -68,6 +68,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/sounds/beep.mp3", AssetType.MUSIC);
 		className.set ("assets/sounds/flixel.mp3", __ASSET__assets_sounds_flixel_mp3);
 		type.set ("assets/sounds/flixel.mp3", AssetType.MUSIC);
+		className.set ("assets/sounds/beep.ogg", __ASSET__assets_sounds_beep_ogg);
+		type.set ("assets/sounds/beep.ogg", AssetType.SOUND);
+		className.set ("assets/sounds/flixel.ogg", __ASSET__assets_sounds_flixel_ogg);
+		type.set ("assets/sounds/flixel.ogg", AssetType.SOUND);
 		
 		
 		#elseif html5
@@ -121,11 +125,21 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.MUSIC);
+		id = "assets/sounds/beep.ogg";
+		path.set (id, id);
+		
+		type.set (id, AssetType.SOUND);
+		id = "assets/sounds/flixel.ogg";
+		path.set (id, id);
+		
+		type.set (id, AssetType.SOUND);
 		
 		
 		#else
 		
 		#if openfl
+		
+		
 		
 		
 		
@@ -181,6 +195,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/sounds/flixel.mp3", __ASSET__assets_sounds_flixel_mp3);
 		type.set ("assets/sounds/flixel.mp3", AssetType.MUSIC);
+		
+		className.set ("assets/sounds/beep.ogg", __ASSET__assets_sounds_beep_ogg);
+		type.set ("assets/sounds/beep.ogg", AssetType.SOUND);
+		
+		className.set ("assets/sounds/flixel.ogg", __ASSET__assets_sounds_flixel_ogg);
+		type.set ("assets/sounds/flixel.ogg", AssetType.SOUND);
 		
 		
 		if (useManifest) {
@@ -752,23 +772,27 @@ class DefaultAssetLibrary extends AssetLibrary {
 #if !display
 #if flash
 
-@:keep @:bind #if display private #end class __ASSET__assets_data_data_goes_here_txt extends flash.utils.ByteArray { }
-@:keep @:bind #if display private #end class __ASSET__assets_images_imagebases_txt extends flash.utils.ByteArray { }
-@:keep @:bind #if display private #end class __ASSET__assets_images_images_go_here_txt extends flash.utils.ByteArray { }
+@:keep @:bind #if display private #end class __ASSET__assets_data_data_goes_here_txt extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_images_imagebases_txt extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_images_images_go_here_txt extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_options_button_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_play_button_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_tree1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_tree2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_tree3_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_music_music_goes_here_txt extends flash.utils.ByteArray { }
-@:keep @:bind #if display private #end class __ASSET__assets_sounds_sounds_go_here_txt extends flash.utils.ByteArray { }
-@:keep @:bind #if display private #end class __ASSET__assets_sounds_beep_mp3 extends flash.media.Sound { }
-@:keep @:bind #if display private #end class __ASSET__assets_sounds_flixel_mp3 extends flash.media.Sound { }
+@:keep @:bind #if display private #end class __ASSET__assets_music_music_goes_here_txt extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_sounds_go_here_txt extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_beep_mp3 extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_flixel_mp3 extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_beep_ogg extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_flixel_ogg extends null { }
 
 
 #elseif html5
 
 #if openfl
+
+
 
 
 
@@ -805,6 +829,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:file("assets/sounds/sounds-go-here.txt") class __ASSET__assets_sounds_sounds_go_here_txt extends lime.utils.ByteArray {}
 @:sound("C:/HaxeToolkit/haxe/lib/flixel/3,3,6/assets/sounds/beep.mp3") class __ASSET__assets_sounds_beep_mp3 extends lime.audio.AudioSource {}
 @:sound("C:/HaxeToolkit/haxe/lib/flixel/3,3,6/assets/sounds/flixel.mp3") class __ASSET__assets_sounds_flixel_mp3 extends lime.audio.AudioSource {}
+@:sound("C:/HaxeToolkit/haxe/lib/flixel/3,3,6/assets/sounds/beep.ogg") class __ASSET__assets_sounds_beep_ogg extends lime.audio.AudioSource {}
+@:sound("C:/HaxeToolkit/haxe/lib/flixel/3,3,6/assets/sounds/flixel.ogg") class __ASSET__assets_sounds_flixel_ogg extends lime.audio.AudioSource {}
 
 
 

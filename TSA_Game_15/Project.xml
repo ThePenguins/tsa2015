@@ -14,13 +14,13 @@
 	<!--------------------------------WINDOW SETTINGS------------------------------->
 	
 	<!--These window settings apply to all targets-->
-	<window width="640" height="480" fps="60" background="#000000" hardware="true" vsync="true" />
+	<window width="640" height="480" fps="60" background="#000000" hardware="true" vsync="true" borderless="false" />
 	
 	<!--Web-specific-->
 	<window if="web" orientation="portrait"  />
 	
 	<!--Desktop-specific-->
-	<window if="desktop" orientation="landscape" fullscreen="false" resizable="true" />
+	<window if="desktop" orientation="landscape" fullscreen="false" resizable="false" />
 	
 	<!--Mobile-specific-->
 	<window if="mobile" orientation="landscape" fullscreen="true" width="0" height="0" />
@@ -32,7 +32,8 @@
 	<assets path="assets" />
 	
 	<!--------------------------------LIBRARIES------------------------------------->
-
+	<set name="no-custom-backend" />
+	
 	<haxelib name="flixel"/>
 	
 	<!--In case you want to use the addons package-->

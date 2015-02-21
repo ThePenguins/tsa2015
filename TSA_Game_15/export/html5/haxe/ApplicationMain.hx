@@ -75,6 +75,14 @@ class ApplicationMain {
 		types.push (AssetType.MUSIC);
 		
 		
+		urls.push ("assets/sounds/beep.ogg");
+		types.push (AssetType.SOUND);
+		
+		
+		urls.push ("assets/sounds/flixel.ogg");
+		types.push (AssetType.SOUND);
+		
+		
 		
 		preloader.load (urls, types);
 		#end
@@ -123,7 +131,7 @@ class ApplicationMain {
 			
 			antialiasing: Std.int (0),
 			background: Std.int (0),
-			borderless: false,
+			borderless: true,
 			depthBuffer: false,
 			fps: Std.int (60),
 			fullscreen: false,
