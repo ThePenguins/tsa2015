@@ -2,5 +2,7 @@ tree base sizes:
 tree1: 300 x 100
 tree2: 200 x 100
 tree3: 400 x 100
+tree4: 100 x 100
+tree5: 250 x 100
 
 note: a bit obvious, but if images are scaled, scale base sizes as well
